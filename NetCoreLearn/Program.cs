@@ -7,6 +7,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//test adding multiple services
+TestForMultipleImplementServices.Test(builder);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
