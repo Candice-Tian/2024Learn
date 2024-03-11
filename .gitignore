@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/.vs
+/2024Learn/obj
+/NetCoreLearn/obj
