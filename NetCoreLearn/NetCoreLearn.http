@@ -1,0 +1,6 @@
+@NetCoreLearn_HostAddress = http://localhost:5249
+
+GET {{NetCoreLearn_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
