@@ -1,0 +1,1 @@
+2024-04-16 20:46:20.738 +07:00 [INF] This is the program of NetCore learning

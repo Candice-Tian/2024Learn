@@ -1,3 +1,12 @@
+//add Log file
+Log.Logger = new LoggerConfiguration()
+       .MinimumLevel.Debug()
+       .WriteTo.Console()
+       .WriteTo.File("logs/myapp.txt", rollingInterval: RollingInterval.Day)
+       .CreateLogger();
+
+Log.Information("This is the program of NetCore learning");
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
