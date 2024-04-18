@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace NetCoreLearn.Controllers
 {
     [ApiController]
@@ -21,6 +19,8 @@ namespace NetCoreLearn.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+
+            Log.Information("This is for GetWeatherForecast API");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
