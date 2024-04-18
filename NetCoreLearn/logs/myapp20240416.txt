@@ -1,0 +1,4 @@
+2024-04-16 20:46:20.738 +07:00 [INF] This is the program of NetCore learning
+2024-04-16 20:52:55.311 +07:00 [INF] This is the program of NetCore learning
+2024-04-16 20:53:19.661 +07:00 [INF] This is for GetWeatherForecast API
+2024-04-16 20:55:13.068 +07:00 [INF] This is the program of NetCore learning
