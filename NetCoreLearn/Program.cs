@@ -17,6 +17,8 @@ builder.Services.AddSwaggerGen();
 //Add DB
 builder.Services.AddSqlite<PizzaContext>("Data Source=ContosoPizza.db");
 
+builder.Services.AddScoped<PizzaService>();
+
 //test adding multiple services
 TestForMultipleImplementServices.Test(builder);
 
