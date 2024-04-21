@@ -10,11 +10,12 @@ Log.Information("This is the program of NetCore learning");
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Add DB
+builder.Services.AddSqlite<PizzaContext>("Data Source=ContosoPizza.db");
 
 //test adding multiple services
 TestForMultipleImplementServices.Test(builder);
