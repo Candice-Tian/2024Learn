@@ -37,4 +37,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.CreateDbIfNotExists();
+
 app.Run();
